@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 LOGIN PAGE STYLING */
+.login-container {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-container button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #00c6ff;
+}
+
+.signup-link {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 SIGNUP PAGE STYLING */
+.signup-container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+.signup-container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.signup-container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.signup-container input:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+.signup-container button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #00c6ff;
+}
+
+.signup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 480px) {
+    .signup-container, .login-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .signup-container h1, .login-container h1 {
+        font-size: 20px;
+    }
+
+    .signup-container input, .login-container input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .signup-container button, .login-container button {
+        font-size: 14px;
+    }
+}
